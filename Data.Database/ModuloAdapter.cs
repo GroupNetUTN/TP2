@@ -22,19 +22,19 @@ namespace Data.Database
                     Modulo m;
 
                     m = new Modulo();
-                    m.Descripcion = "Mod1";
+                    m.Descripcion = "Modulo1";
                     _Modulos.Add(m);
 
                     m = new Modulo();
-                    m.Descripcion = "Mod2";
+                    m.Descripcion = "Modulo2";
                     _Modulos.Add(m);
 
                     m = new Modulo();
-                    m.Descripcion = "Mod3";
+                    m.Descripcion = "Modulo3";
                     _Modulos.Add(m);
 
                     m = new Modulo();
-                    m.Descripcion = "Mod4";
+                    m.Descripcion = "Modulo4";
                     _Modulos.Add(m);   
                 }
                 return _Modulos;
