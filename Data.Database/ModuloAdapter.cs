@@ -22,7 +22,7 @@ namespace Data.Database
                     Modulo m;
 
                     m = new Modulo();
-                    m.Descripcion = "Modulo1";
+                    m.Descripcion = "ModuloPrimero";
                     _Modulos.Add(m);
 
                     m = new Modulo();
