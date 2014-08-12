@@ -45,3 +45,5 @@ C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04 modified\UI.Desktop\obj
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04 modified\UI.Desktop\obj\x86\Debug\UI.Desktop.pdb
 C:\Users\Matias\Google Drive\TP2 .NET\TP2_02-07-14_V.00.01\UI.Desktop\obj\x86\Debug\UI.Desktop.exe
 C:\Users\Matias\Google Drive\TP2 .NET\TP2_02-07-14_V.00.01\UI.Desktop\obj\x86\Debug\UI.Desktop.pdb
+D:\Facultad\Electivas\NET\TP2_Proyecto\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.exe
+D:\Facultad\Electivas\NET\TP2_Proyecto\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.pdb
