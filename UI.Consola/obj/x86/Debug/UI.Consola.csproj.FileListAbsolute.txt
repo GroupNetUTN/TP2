@@ -6,7 +6,6 @@ C:\Users\Matias\Desktop\TP2\UI.Consola\bin\Debug\Data.Database.dll
 C:\Users\Matias\Desktop\TP2\UI.Consola\bin\Debug\Business.Entities.pdb
 C:\Users\Matias\Desktop\TP2\UI.Consola\bin\Debug\Business.Logic.pdb
 C:\Users\Matias\Desktop\TP2\UI.Consola\bin\Debug\Data.Database.pdb
-C:\Users\Matias\Desktop\TP2\UI.Consola\obj\x86\Debug\UI.Consola.csprojResolveAssemblyReference.cache
 C:\Users\Matias\Desktop\TP2\UI.Consola\obj\x86\Debug\UI.Consola.exe
 C:\Users\Matias\Desktop\TP2\UI.Consola\obj\x86\Debug\UI.Consola.pdb
 C:\Users\Matias\Desktop\TP2 Lab 04\UI.Consola\obj\x86\Debug\UI.Consola.exe
@@ -31,3 +30,4 @@ C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\UI.Consola\bin\Debug\Da
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\UI.Consola\obj\x86\Debug\UI.Consola.exe
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\UI.Consola\obj\x86\Debug\UI.Consola.pdb
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\UI.Consola\obj\x86\Debug\UI.Consola.csprojResolveAssemblyReference.cache
+C:\Users\Matias\Desktop\TP2\UI.Consola\obj\x86\Debug\ResolveAssemblyReference.cache
