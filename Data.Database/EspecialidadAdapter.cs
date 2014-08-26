@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace Data.Database
 {
-    class EspecialidadAdapter : Adapter
+    public class EspecialidadAdapter : Adapter
     {
           #region DatosEnMemoria
         // Esta región solo se usa en esta etapa donde los datos se mantienen en memoria.
