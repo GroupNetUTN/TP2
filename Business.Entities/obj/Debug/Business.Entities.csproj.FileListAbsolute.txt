@@ -8,3 +8,8 @@ C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Business.Entities\obj\D
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Business.Entities\obj\Debug\Business.Entities.pdb
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache
 C:\Users\Matias\Desktop\TP2\Business.Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andres\Desktop\TP2\Business.Entities\bin\Debug\Business.Entities.dll
+C:\Users\Andres\Desktop\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
+C:\Users\Andres\Desktop\TP2\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Andres\Desktop\TP2\Business.Entities\obj\Debug\Business.Entities.dll
+C:\Users\Andres\Desktop\TP2\Business.Entities\obj\Debug\Business.Entities.pdb

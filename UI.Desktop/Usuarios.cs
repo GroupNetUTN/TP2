@@ -16,6 +16,7 @@ namespace UI.Desktop
         public Usuarios()
         {
             InitializeComponent();
+            dgvUsuarios.AutoGenerateColumns = false;
         }
 
         public void Listar()
@@ -57,10 +58,14 @@ namespace UI.Desktop
 
         private void tsbEliminar_Click(object sender, EventArgs e)
         {
-            int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
-            UsuarioLogic user = new UsuarioLogic();
-            user.Delete(ID);
-            this.Listar();
+            var rta = MessageBox.Show("¿Esta seguro que desea eliminar el usuario?", "Atencion", MessageBoxButtons.YesNo);
+            if (rta == DialogResult.Yes)
+            {
+                int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
+                UsuarioLogic user = new UsuarioLogic();
+                user.Delete(ID);
+                this.Listar();
+            }
         }
 
 
