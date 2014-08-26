@@ -69,3 +69,4 @@ C:\Users\Andres\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.UsuarioDesktop.r
 C:\Users\Andres\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Usuarios.resources
 C:\Users\Andres\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Properties.Resources.resources
 C:\Users\Andres\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.csproj.GenerateResource.Cache
+C:\Users\Andres\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Especialidades.resources
