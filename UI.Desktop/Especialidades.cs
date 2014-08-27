@@ -39,5 +39,33 @@ namespace UI.Desktop
         {
             this.Close();
         }
+
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+            EspecialidadDesktop EspDesktop = new EspecialidadDesktop(ApplicationForm.ModoForm.Alta);
+            EspDesktop.ShowDialog();
+            this.Listar();
+        }
+
+        private void tsbEditar_Click(object sender, EventArgs e)
+        {
+            int ID = ((Business.Entities.Especialidad)this.dgvEspecialidades.SelectedRows[0].DataBoundItem).ID;
+            EspecialidadDesktop EspeDesktop = new EspecialidadDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+            EspeDesktop.ShowDialog();
+            this.Listar();
+
+        }
+
+        private void tsbEliminar_Click(object sender, EventArgs e)
+        {
+            var rta = MessageBox.Show("¿Esta seguro que desea eliminar esta especialidad?", "Atencion", MessageBoxButtons.YesNo);
+            if (rta == DialogResult.Yes)
+            {
+                int ID = ((Business.Entities.Especialidad)this.dgvEspecialidades.SelectedRows[0].DataBoundItem).ID;
+                EspecialidadLogic especialidad = new EspecialidadLogic();
+                especialidad.Delete(ID);
+                this.Listar();
+            }
+        }
     }
 }

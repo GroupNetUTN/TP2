@@ -86,7 +86,7 @@ namespace Data.Database
                 SqlDataReader drEspecialidad = cmdGetOne.ExecuteReader();
                 if (drEspecialidad.Read())
                 {
-                    esp.ID = (int)drEspecialidad["id_usuario"];
+                    esp.ID = (int)drEspecialidad["id_especialidad"];
                     esp.Descripcion = (string)drEspecialidad["desc_especialidad"];
                 }
                 drEspecialidad.Close();
