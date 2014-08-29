@@ -9,27 +9,24 @@ namespace Business.Entities
     {
         private string _Descripcion;
         private int _IDEspecialidad;
+        private int _IDPlan;
 
         public string Descripcion
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return _Descripcion; }
+            set { _Descripcion = value; }
         }
 
         public int IDEspecialidad
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return _IDEspecialidad; }
+            set { _IDEspecialidad = value; }
+        }
+
+        public int IDPlan
+        {
+            get { return _IDPlan; }
+            set { _IDPlan = value; }
         }
     }
 }
