@@ -11,21 +11,21 @@ using Business.Logic;
 
 namespace UI.Desktop
 {
-    public partial class Usuarios : ApplicationForm
+    public partial class Planes : ApplicationForm
     {
-        public Usuarios()
+        public Planes()
         {
             InitializeComponent();
-            dgvUsuarios.AutoGenerateColumns = false;
+            dgvPlanes.AutoGenerateColumns = false;
         }
 
         public void Listar()
         {
-            UsuarioLogic ul = new UsuarioLogic();
-            this.dgvUsuarios.DataSource = ul.GetAll();
+            PlanLogic pl = new PlanLogic();
+            this.dgvPlanes.DataSource = pl.GetAll();
         }
 
-        private void Usuarios_Load(object sender, EventArgs e)
+        private void Planes_Load(object sender, EventArgs e)
         {
             this.Listar();
         }
@@ -42,28 +42,28 @@ namespace UI.Desktop
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            UsuarioDesktop UserDesktop = new UsuarioDesktop(ApplicationForm.ModoForm.Alta);
-            UserDesktop.ShowDialog();
+            PlanDesktop PlanDesktop = new PlanDesktop(ApplicationForm.ModoForm.Alta);
+            PlanDesktop.ShowDialog();
             this.Listar();
         }
 
         private void tsbEditar_Click(object sender, EventArgs e)
         {
-            int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
-            UsuarioDesktop UserDesktop = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Modificacion);
-            UserDesktop.ShowDialog();
+            int ID = ((Business.Entities.Usuario)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
+            PlanDesktop PlanDesktop = new PlanDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+            PlanDesktop.ShowDialog();
             this.Listar();
 
         }
 
         private void tsbEliminar_Click(object sender, EventArgs e)
         {
-            var rta = MessageBox.Show("¿Esta seguro que desea eliminar el usuario?", "Atencion", MessageBoxButtons.YesNo);
+            var rta = MessageBox.Show("¿Esta seguro que desea eliminar el Plan seleccionado?", "Atencion", MessageBoxButtons.YesNo);
             if (rta == DialogResult.Yes)
             {
-                int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
-                UsuarioLogic user = new UsuarioLogic();
-                user.Delete(ID);
+                int ID = ((Business.Entities.Usuario)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
+                PlanLogic plan = new PlanLogic();
+                plan.Delete(ID);
                 this.Listar();
             }
         }

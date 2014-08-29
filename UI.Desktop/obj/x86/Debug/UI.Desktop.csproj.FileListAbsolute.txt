@@ -89,3 +89,5 @@ C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Properties.Resources.resources
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.csproj.GenerateResource.Cache
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.EspecialidadDesktop.resources
+C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.PlanDesktop.resources
+C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Planes.resources
