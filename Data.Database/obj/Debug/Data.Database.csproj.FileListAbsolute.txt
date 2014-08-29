@@ -11,7 +11,6 @@ C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Data.Database\bin\Debug
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Data.Database\obj\Debug\Data.Database.dll
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Data.Database\obj\Debug\Data.Database.pdb
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
-C:\Users\Matias\Desktop\TP2\Data.Database\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Andres\Desktop\TP2\Data.Database\bin\Debug\Data.Database.dll
 C:\Users\Andres\Desktop\TP2\Data.Database\bin\Debug\Data.Database.pdb
 C:\Users\Andres\Desktop\TP2\Data.Database\bin\Debug\Business.Entities.dll
@@ -26,3 +25,4 @@ C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\Data.Database\bin\Debug\Busi
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\Data.Database\obj\Debug\Data.Database.dll
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\Data.Database\obj\Debug\Data.Database.pdb
+C:\Users\Matias\Desktop\TP2\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache

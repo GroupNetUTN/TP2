@@ -30,7 +30,6 @@ C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\UI.Consola\bin\Debug\Da
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\UI.Consola\obj\x86\Debug\UI.Consola.exe
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\UI.Consola\obj\x86\Debug\UI.Consola.pdb
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\UI.Consola\obj\x86\Debug\UI.Consola.csprojResolveAssemblyReference.cache
-C:\Users\Matias\Desktop\TP2\UI.Consola\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Andres\Desktop\TP2\UI.Consola\bin\Debug\UI.Consola.exe
 C:\Users\Andres\Desktop\TP2\UI.Consola\bin\Debug\UI.Consola.pdb
 C:\Users\Andres\Desktop\TP2\UI.Consola\bin\Debug\Business.Entities.dll
@@ -53,3 +52,4 @@ C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Consola\bin\Debug\Data.Da
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Consola\obj\x86\Debug\UI.Consola.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Consola\obj\x86\Debug\UI.Consola.exe
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Consola\obj\x86\Debug\UI.Consola.pdb
+C:\Users\Matias\Desktop\TP2\UI.Consola\obj\x86\Debug\UI.Consola.csprojResolveAssemblyReference.cache

@@ -15,7 +15,6 @@ C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Business.Logic\bin\Debu
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Business.Logic\obj\Debug\Business.Logic.dll
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Business.Logic\obj\Debug\Business.Logic.pdb
 C:\Users\Matias\Google Drive\Laboratorio .NET\TP2 Lab 04\Business.Logic\obj\Debug\Business.Logic.csprojResolveAssemblyReference.cache
-C:\Users\Matias\Desktop\TP2\Business.Logic\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Andres\Desktop\TP2\Business.Logic\bin\Debug\Business.Logic.dll
 C:\Users\Andres\Desktop\TP2\Business.Logic\bin\Debug\Business.Logic.pdb
 C:\Users\Andres\Desktop\TP2\Business.Logic\bin\Debug\Business.Entities.dll
@@ -34,3 +33,4 @@ C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\Business.Logic\bin\Debug\Dat
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\Business.Logic\obj\Debug\Business.Logic.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\Business.Logic\obj\Debug\Business.Logic.dll
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\Business.Logic\obj\Debug\Business.Logic.pdb
+C:\Users\Matias\Desktop\TP2\Business.Logic\obj\Debug\Business.Logic.csprojResolveAssemblyReference.cache

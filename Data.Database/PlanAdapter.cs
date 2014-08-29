@@ -97,11 +97,13 @@ namespace Data.Database
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdUpdate = new SqlCommand("UPDATE planes SET desc_plan=@desc, id_especialidad=@id_esp WHERE id_plan=@id", SqlConn);
+                SqlCommand cmdUpdate = new SqlCommand("UPDATE planes SET desc_plan=@desc, id_especialidad=@id_esp " +
+                    "WHERE id_plan=@id", SqlConn);
 
                 cmdUpdate.Parameters.Add("@id", SqlDbType.Int).Value = plan.ID;
                 cmdUpdate.Parameters.Add("@desc", SqlDbType.VarChar).Value = plan.Descripcion;
                 cmdUpdate.Parameters.Add("@id_esp", SqlDbType.Int).Value = plan.IDEspecialidad;
+                cmdUpdate.ExecuteNonQuery();
             }
             catch (Exception e)
             {

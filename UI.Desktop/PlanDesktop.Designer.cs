@@ -96,6 +96,7 @@
             this.btnAceptar.TabIndex = 8;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -105,6 +106,7 @@
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // PlanDesktop
             // 
@@ -121,6 +123,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PlanDesktop";
             this.Text = "PlanDesktop";
+            this.Load += new System.EventHandler(this.PlanDesktop_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

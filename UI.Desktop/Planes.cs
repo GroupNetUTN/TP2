@@ -49,7 +49,7 @@ namespace UI.Desktop
 
         private void tsbEditar_Click(object sender, EventArgs e)
         {
-            int ID = ((Business.Entities.Usuario)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
+            int ID = ((Business.Entities.Plan)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
             PlanDesktop PlanDesktop = new PlanDesktop(ID, ApplicationForm.ModoForm.Modificacion);
             PlanDesktop.ShowDialog();
             this.Listar();
@@ -61,7 +61,7 @@ namespace UI.Desktop
             var rta = MessageBox.Show("¿Esta seguro que desea eliminar el Plan seleccionado?", "Atencion", MessageBoxButtons.YesNo);
             if (rta == DialogResult.Yes)
             {
-                int ID = ((Business.Entities.Usuario)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
+                int ID = ((Business.Entities.Plan)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
                 PlanLogic plan = new PlanLogic();
                 plan.Delete(ID);
                 this.Listar();

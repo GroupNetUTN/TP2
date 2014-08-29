@@ -46,12 +46,9 @@ C:\Users\Matias\Google Drive\TP2 .NET\TP2_02-07-14_V.00.01\UI.Desktop\obj\x86\De
 D:\Facultad\Electivas\NET\TP2_Proyecto\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.exe
 D:\Facultad\Electivas\NET\TP2_Proyecto\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.pdb
 C:\Users\Matias\Desktop\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
-C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.ApplicationForm.resources
 C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.UsuarioDesktop.resources
 C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Usuarios.resources
-C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Andres\Desktop\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
 C:\Users\Andres\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.exe
 C:\Users\Andres\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.pdb
@@ -91,3 +88,9 @@ C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.EspecialidadDesktop.resources
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.PlanDesktop.resources
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Planes.resources
+C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.csprojResolveAssemblyReference.cache
+C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.EspecialidadDesktop.resources
+C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Especialidades.resources
+C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.PlanDesktop.resources
+C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Planes.resources
+C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.csproj.GenerateResource.Cache
