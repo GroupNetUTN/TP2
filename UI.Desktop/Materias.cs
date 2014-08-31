@@ -11,21 +11,21 @@ using Business.Logic;
 
 namespace UI.Desktop
 {
-    public partial class Planes : ApplicationForm
+    public partial class Materias : ApplicationForm
     {
-        public Planes()
+        public Materias()
         {
             InitializeComponent();
-            dgvPlanes.AutoGenerateColumns = false;
+            dgvMaterias.AutoGenerateColumns = false;
         }
 
         public void Listar()
         {
-            MateriaLogic pl = new MateriaLogic();
-            this.dgvPlanes.DataSource = pl.GetAll();
+            MateriaLogic ml = new MateriaLogic();
+            this.dgvMaterias.DataSource = ml.GetAll();
         }
 
-        private void Planes_Load(object sender, EventArgs e)
+        private void Materias_Load(object sender, EventArgs e)
         {
             this.Listar();
         }
@@ -42,30 +42,33 @@ namespace UI.Desktop
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            PlanDesktop PlanDesktop = new PlanDesktop(ApplicationForm.ModoForm.Alta);
-            PlanDesktop.ShowDialog();
+            MateriaDesktop MateriaDesktop = new MateriaDesktop(ApplicationForm.ModoForm.Alta);
+            MateriaDesktop.ShowDialog();
             this.Listar();
         }
 
         private void tsbEditar_Click(object sender, EventArgs e)
         {
-            int ID = ((Business.Entities.Plan)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
-            PlanDesktop PlanDesktop = new PlanDesktop(ID, ApplicationForm.ModoForm.Modificacion);
-            PlanDesktop.ShowDialog();
+            int ID = ((Business.Entities.Materia)this.dgvMaterias.SelectedRows[0].DataBoundItem).ID;
+            MateriaDesktop MateriaDesktop = new MateriaDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+            MateriaDesktop.ShowDialog();
             this.Listar();
-
         }
 
         private void tsbEliminar_Click(object sender, EventArgs e)
         {
-            var rta = MessageBox.Show("¿Esta seguro que desea eliminar el Plan seleccionado?", "Atencion", MessageBoxButtons.YesNo);
+            var rta = MessageBox.Show("¿Esta seguro que desea eliminar la Materia seleccionada?", "Atencion", MessageBoxButtons.YesNo);
             if (rta == DialogResult.Yes)
             {
-                int ID = ((Business.Entities.Plan)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
-                MateriaLogic plan = new MateriaLogic();
-                plan.Delete(ID);
+                int ID = ((Business.Entities.Materia)this.dgvMaterias.SelectedRows[0].DataBoundItem).ID;
+                MateriaLogic materia = new MateriaLogic();
+                materia.Delete(ID);
                 this.Listar();
             }
+
+
         }
+
+
     }
 }

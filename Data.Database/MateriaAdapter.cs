@@ -22,17 +22,18 @@ namespace Data.Database
                 while (drMaterias.Read())
                 {
                     Materia mat = new Materia();
-                    mat.ID = (int)drMaterias["id_plan"];
-                    mat.Descripcion = (string)drMaterias["desc_plan"];
-                    //mat.IDEspecialidad = (int)drMaterias["id_especialidad"];
-
+                    mat.ID = (int)drMaterias["id_materia"];
+                    mat.Descripcion = (string)drMaterias["desc_materia"];
+                    mat.HSSemanales = (int)drMaterias["hs_semanales"];
+                    mat.HSTotales = (int)drMaterias["hs_totales"];
+                    mat.IDPlan = (int)drMaterias["id_plan"];
                     materias.Add(mat);
                 }
                 drMaterias.Close();
             }
             catch (Exception e)
             {
-                Exception ExcepcionManejada = new Exception("Error al recuperar datos de los Planes.", e);
+                Exception ExcepcionManejada = new Exception("Error al recuperar datos de las materias.", e);
                 throw ExcepcionManejada;
             }
             finally
@@ -42,34 +43,36 @@ namespace Data.Database
             return materias;
         }
 
-        public Plan GetOne(int ID)
+        public Materia GetOne(int ID)
         {
-            Plan p = new Plan();
+            Materia mat = new Materia();
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdGetOne = new SqlCommand("select * from planes where id_plan=@id", SqlConn);
+                SqlCommand cmdGetOne = new SqlCommand("select * from materia where id_materia=@id", SqlConn);
                 cmdGetOne.Parameters.Add("@id", SqlDbType.Int).Value = ID;
-                SqlDataReader drPlanes = cmdGetOne.ExecuteReader();
-                if (drPlanes.Read())
+                SqlDataReader drMaterias = cmdGetOne.ExecuteReader();
+                if (drMaterias.Read())
                 {
-                    p.ID = (int)drPlanes["id_plan"];
-                    p.Descripcion = (string)drPlanes["desc_plan"];
-                    p.IDEspecialidad = (int)drPlanes["id_especialidad"];
+                    mat.ID = (int)drMaterias["id_plan"];
+                    mat.Descripcion = (string)drMaterias["desc_materia"];
+                    mat.HSSemanales = (int)drMaterias["hs_semanales"];
+                    mat.HSTotales = (int)drMaterias["hs_totales"];
+                    mat.IDPlan = (int)drMaterias["id_plan"];
                 }
 
-                drPlanes.Close();
+                drMaterias.Close();
             }
             catch (Exception e)
             {
-                Exception ExcepcionManejada = new Exception("Error al recuperar datos del Plan.", e);
+                Exception ExcepcionManejada = new Exception("Error al recuperar datos de la materia.", e);
                 throw ExcepcionManejada;
             }
             finally
             {
                 this.CloseConnection();
             }
-            return p;
+            return mat;
         }
 
         public void Delete(int ID)
@@ -77,13 +80,13 @@ namespace Data.Database
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdDelete = new SqlCommand("delete planes where id_plan = @id", SqlConn);
+                SqlCommand cmdDelete = new SqlCommand("delete materias where id_plan = @id", SqlConn);
                 cmdDelete.Parameters.Add("@id", SqlDbType.Int).Value = ID;
                 cmdDelete.ExecuteNonQuery();
             }
             catch (Exception e)
             {
-                Exception ExcepcionManejada = new Exception("Error al eliminar el Plan.", e);
+                Exception ExcepcionManejada = new Exception("Error al eliminar la materia.", e);
                 throw ExcepcionManejada;
             }
             finally
@@ -92,22 +95,24 @@ namespace Data.Database
             }
         }
 
-        protected void Update(Plan plan)
+        protected void Update(Materia mat)
         {
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdUpdate = new SqlCommand("UPDATE planes SET desc_plan=@desc, id_especialidad=@id_esp " +
+                SqlCommand cmdUpdate = new SqlCommand("UPDATE materias SET desc_materia=@desc, hs_semanales=@hs_sem, hs_totales=@hs_tot, id_plan=@id_plan " +
                     "WHERE id_plan=@id", SqlConn);
 
-                cmdUpdate.Parameters.Add("@id", SqlDbType.Int).Value = plan.ID;
-                cmdUpdate.Parameters.Add("@desc", SqlDbType.VarChar).Value = plan.Descripcion;
-                cmdUpdate.Parameters.Add("@id_esp", SqlDbType.Int).Value = plan.IDEspecialidad;
+                cmdUpdate.Parameters.Add("@id", SqlDbType.Int).Value = mat.ID;
+                cmdUpdate.Parameters.Add("@desc", SqlDbType.VarChar).Value = mat.Descripcion;
+                cmdUpdate.Parameters.Add("@hs_semanales", SqlDbType.Int).Value = mat.HSSemanales;
+                cmdUpdate.Parameters.Add("@hs_totales", SqlDbType.Int).Value = mat.HSTotales;
+                cmdUpdate.Parameters.Add("@id_plan", SqlDbType.Int).Value = mat.IDPlan;
                 cmdUpdate.ExecuteNonQuery();
             }
             catch (Exception e)
             {
-                Exception ExcepcionManejada = new Exception("Error al modificar datos del Plan.", e);
+                Exception ExcepcionManejada = new Exception("Error al modificar datos de la materia.", e);
                 throw ExcepcionManejada;
             }
             finally
@@ -116,20 +121,22 @@ namespace Data.Database
             }
         }
 
-        protected void Insert(Plan plan)
+        protected void Insert(Materia mat)
         {
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdInsert = new SqlCommand("insert into planes(desc_plan,id_especialidad) values(@desc,@esp) select @@identity", SqlConn);
+                SqlCommand cmdInsert = new SqlCommand("insert into materias(desc_materia,hs_semanales,hs_totales,id_plan) values(@desc,@hs_sem,@hs_tot,@id_plan) select @@identity", SqlConn);
 
-                cmdInsert.Parameters.Add("@desc", SqlDbType.VarChar).Value = plan.Descripcion;
-                cmdInsert.Parameters.Add("@esp", SqlDbType.Int).Value = plan.IDEspecialidad;
-                plan.ID = Decimal.ToInt32((decimal)cmdInsert.ExecuteScalar());
+                cmdInsert.Parameters.Add("@desc", SqlDbType.VarChar).Value = mat.Descripcion;
+                cmdInsert.Parameters.Add("@hs_semanales", SqlDbType.Int).Value = mat.HSSemanales;
+                cmdInsert.Parameters.Add("@hs_totales", SqlDbType.Int).Value = mat.HSTotales;
+                cmdInsert.Parameters.Add("@id_plan", SqlDbType.Int).Value = mat.IDPlan;
+                mat.ID = Decimal.ToInt32((decimal)cmdInsert.ExecuteScalar());
             }
             catch (Exception e)
             {
-                Exception ExcepcionManejada = new Exception("Error al crear un nuevo Plan.", e);
+                Exception ExcepcionManejada = new Exception("Error al crear una nueva materia.", e);
                 throw ExcepcionManejada;
             }
             finally
@@ -138,21 +145,21 @@ namespace Data.Database
             }
         }
 
-        public void Save(Plan plan)
+        public void Save(Materia mat)
         {
-            if (plan.State == BusinessEntity.States.Deleted)
+            if (mat.State == BusinessEntity.States.Deleted)
             {
-                this.Delete(plan.ID);
+                this.Delete(mat.ID);
             }
-            else if (plan.State == BusinessEntity.States.New)
+            else if (mat.State == BusinessEntity.States.New)
             {
-                this.Insert(plan);
+                this.Insert(mat);
             }
-            else if (plan.State == BusinessEntity.States.Modified)
+            else if (mat.State == BusinessEntity.States.Modified)
             {
-                this.Update(plan);
+                this.Update(mat);
             }
-            plan.State = BusinessEntity.States.Unmodified;
+            mat.State = BusinessEntity.States.Unmodified;
         }
     }
 }

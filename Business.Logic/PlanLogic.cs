@@ -26,22 +26,22 @@ namespace Business.Logic
 
         public Plan GetOne(int ID)
         {
-            return PlanData.GetOne(ID);
+            return _PlanData.GetOne(ID);
         }
 
         public List<Plan> GetAll()
         {
-            return PlanData.GetAll();
+            return _PlanData.GetAll();
         }
 
         public void Save(Plan plan)
         {
-            PlanData.Save(plan);
+            _PlanData.Save(plan);
         }
 
         public void Delete(int ID)
         {
-            PlanData.Delete(ID);
+            _PlanData.Delete(ID);
         }
     }
 }
