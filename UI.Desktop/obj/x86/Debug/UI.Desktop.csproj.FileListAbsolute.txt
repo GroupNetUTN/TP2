@@ -117,3 +117,6 @@ C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\TP2\UI.Desktop\obj\x86\Debug
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.csproj.GenerateResource.Cache
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.PersonaDesktop.resources
 C:\Users\Usuario\Desktop\JuanPablo\UTN\IDE\TP 2\TP2\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Personas.resources
+C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.PersonaDesktop.resources
+C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Personas.resources
+C:\Users\Matias\Desktop\TP2\UI.Desktop\obj\x86\Debug\UI.Desktop.Test.resources
